@@ -1,9 +1,9 @@
 tests
 testTail
-	| pty isForRead textByte text child "commandSent" command password "commandToRun target" |
+	| pty isForRead textByte text child "commandSent" command "commandToRun target" |
 	
 	command := 'tail -f /home/omar/omar.txt'.
-	password := 'oMirueira01%'. 
+	
 	
 	child := IntegerPointer new.
 	pty := Pty

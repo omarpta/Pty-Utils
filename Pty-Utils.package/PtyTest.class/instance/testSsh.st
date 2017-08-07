@@ -1,14 +1,9 @@
 main-tests
 testSsh
 	| pty isForRead textByte text child commandSent command password commandToRun target |
-	"command := 'ssh -oConnectTimeout=3 -oStrictHostKeyChecking=no root@10.26.30.183'.
-	password := 'vivo@2017'. 
-	commandToRun := 'ls -lahrt /usr/lib64/ && service --status-all'.
-	target := ']#'."
 	
-	
-	command := 'ssh -oConnectTimeout=3 -oStrictHostKeyChecking=no omarpta@sdf.org'.
-	password := 'oMirueira01%'. 
+	command := 'ssh user@host'.
+	password := '<password>'. 
 	commandToRun := 'ls -lahrt'.
 	target := ']$'.
 	
