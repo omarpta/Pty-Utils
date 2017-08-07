@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "FFIExternalValueHolder",
+	"category" : "Pty-Utils",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StringPointer",
+	"type" : "normal"
+}

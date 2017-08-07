@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "FFILibrary",
+	"category" : "Pty-Utils",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Pty",
+	"type" : "normal"
+}

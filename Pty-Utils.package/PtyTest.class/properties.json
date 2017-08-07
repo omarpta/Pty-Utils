@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Pty-Utils",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PtyTest",
+	"type" : "normal"
+}
