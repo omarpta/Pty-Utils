@@ -17,8 +17,9 @@ testTail
 			Pty with: pty readText: textByte.
 			text := textByte value .  
 			(text isNotNil and: [((text size) > 0)]) ifTrue: [
-				Transcript show: (pty asString) , ' - ', (child value asString).
 				Transcript show: text.  
+				Pty sendCtrlC: pty.
+				isForRead := false.
 			]
 			
 		].

@@ -6,6 +6,7 @@ testSsh
 	password := '<password>'. 
 	commandToRun := 'ls -lahrt'.
 	target := ']$'.
+
 	
 	commandSent := false.
 	child := IntegerPointer new.
