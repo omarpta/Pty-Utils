@@ -6,22 +6,22 @@ testTail
 	
 	
 	child := IntegerPointer new.
-	pty := Pty
+	pty := LibPtyUtils
 		create: command threadHandle: child .
 	
 	isForRead := true.
 	[ [ isForRead ]
 		whileTrue: [
-			(Delay forMilliseconds: 50) wait.
+			(Delay forMilliseconds: 5000) wait.
 			textByte := StringPointer new.			 
-			Pty with: pty readText: textByte.
+			LibPtyUtils with: pty readText: textByte.
 			text := textByte value .  
 			(text isNotNil and: [((text size) > 0)]) ifTrue: [
 				Transcript show: text.  
-				Pty sendCtrlC: pty.
+				LibPtyUtils sendCtrlC: pty.
 				isForRead := false.
 			]
 			
 		].
-	Pty waitThreadFinish: child value.	
+	LibPtyUtils waitThreadFinish: child value.	
 	] fork.

@@ -1,0 +1,1 @@
+Integer pointer to hold values returned by C functions.
